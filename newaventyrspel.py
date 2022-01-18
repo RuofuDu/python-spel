@@ -108,19 +108,20 @@ class Spelaren:
             self.change_tool_or_not()
     
         def change_tool_or_not(self):
-        while True:
-            user_choice = input("\nDin inventory är full, du kan inte lägga till något föremål till din inventory. Vill du byta ett föremål, svara [ja] eller [nej]:\n" + self.inquiry).lower()
-            if user_choice == 'nej': 
-                break
-            elif user_choice == 'ja':
-                self.change_tool()
-                break
-            elif user_choice in ('e', 'i', 'q'):
-                self.display_or_quit(user_choice) #(user choice) ska vara en argument och skicka till funktion "display_or_quit"
-                continue    
-            else:
-                print ("\nOförväntad svar, försök igen!")  
-                continue  
+            while True:
+                user_choice = input("\nDin inventory är full, du kan inte lägga till något föremål till din inventory. Vill du byta ett föremål, svara [ja] eller [nej]:\n" + self.inquiry).lower()
+                if user_choice == 'nej': 
+                    break
+                elif user_choice == 'ja':
+                    self.change_tool()
+                    break
+                elif user_choice in ('e', 'i', 'q'):
+                    self.display_or_quit(user_choice) #(user choice) ska vara en argument och skicka till funktion "display_or_quit"
+                    continue    
+                else:
+                    print ("\nOförväntad svar, försök igen!")  
+                    continue
+ 
   
 
     def change_tool(self): 
