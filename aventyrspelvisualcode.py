@@ -29,7 +29,7 @@ class Spelaren:
         print("Din nivå är",s1.level,"\n")
 
 #HP, styrkan och nivån börjar från:
-s1 = Spelaren(100, 0, 1)
+s1 = Spelaren(100, 100, 1)
 
 
 def add_tool():   #funktionen kallas när slumpad siffran "door" är lika med 2 alltså spelaren hittade en kista, eller när man ska byta in ett föremål.
